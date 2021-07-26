@@ -7,7 +7,7 @@ terraform {
   backend "s3" {}
 }
 module "app" {
-  source = "../../../app"
+  source = "/Users/andrew.pomponi/Desktop/bbterragrunt/infrastructure-modules/app"
   instance_type  = var.instance_type
   instance_count = var.instance_count
   # ... other app settings ...
